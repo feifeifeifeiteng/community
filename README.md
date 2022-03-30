@@ -1,4 +1,4 @@
-# 牛客论坛
+# 论坛
 
 
 
@@ -33,7 +33,7 @@
 
 ## 项目总结
 
-![image-20220206171423266](assets/image-20220206171423266.png)
+
 
 - 使用Spring Security 做权限控制，替代拦截器的拦截控制，并使用自己的认证方案替代Security 认证流程，使权限认证和控制更加方便灵活。
 - 使用Redis的set实现点赞，zset实现关注，并使用Redis存储登录ticket和验证码，解决分布式session问题。
@@ -43,20 +43,5 @@
 - 对热帖排行模块，使用分布式缓存Redis和本地缓存Caffeine作为多级缓存，避免了缓存雪崩，将QPS提升了20倍(10-200)，大大提升了网站访问速度。并使用Quartz定时更新热帖排行。
 - 使用 `Jasypt` 实现配置文件敏感信息加密。
 
-## 效果展示
 
-<table>
-    <tr>
-        <td><img src="assets/image-20220206172107760.png" /></td>
-        <td><img src="assets/image-20220206172230009.png" /></td>
-    </tr>
-    <tr>
-        <td><img src="assets/image-20220206172312092.png" /></td>
-        <td><img src="assets/image-20220206172404326.png" /></td>
-    </tr>
-</table>
-
-## 参考资料
-
-[https://github.com/cosen1024/community](https://github.com/cosen1024/community)
 
